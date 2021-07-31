@@ -29,9 +29,9 @@ export default class MessageHandler {
                 sender.username
             )} in ${chalk.cyanBright(groupMetadata?.subject || 'DM')}`
         )
-        if (!command) return void M.reply('No Command Found! Try using one from the help list.')
+        if (!command) return void M.reply('Sorry, do you mean !help?.')
         const user = await this.client.getUser(M.sender.jid)
-        if (user.ban) return void M.reply("You're Banned from using commands.")
+        if (user.ban) return void M.reply("Oops, You're Banned from using commands.")
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
         if (state) return void M.reply(`❌ This command is disabled${state.reason ? ` for ${state.reason}` : ''}`)
         if (!command.config?.dm && M.chat === 'dm') return void M.reply('This command can only be used in groups')
