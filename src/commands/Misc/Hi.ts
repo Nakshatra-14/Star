@@ -16,7 +16,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         return void (
-            await await request.buffer('./assets/images/#mysticmessenger #zen #zenmysticmessenger - Mystic Messenger Zen Render, HD Png Download , Transparent Png Image - PNGitem (1).png'),
+            await await request.buffer('https://i.pinimg.com/originals/2d/4e/bf/2d4ebf645d543791d1ca71d4177f4272.jpg'),
                 MessageType.image,
                 undefined,
                 undefined,
