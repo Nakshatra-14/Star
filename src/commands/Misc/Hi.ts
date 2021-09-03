@@ -15,6 +15,11 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        return void (await M.reply(`Hi ${M.sender.username}!`))
+        return void (
+            await await request.buffer('./assets/images/My Anime For Life.jfif'),
+                MessageType.image,
+                undefined,
+                undefined,
+            M.reply(`Hello! ${M.sender.username}!`))
     }
 }
