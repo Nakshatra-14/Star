@@ -2,6 +2,9 @@ import chalk from 'chalk'
 import { join } from 'path'
 import BaseCommand from '../lib/BaseCommand'
 import WAClient from '../lib/WAClient'
+import request from '../lib/request'
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
+import fs from 'fs'
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../typings'
 
 export default class MessageHandler {
