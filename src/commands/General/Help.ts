@@ -1,6 +1,9 @@
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
+import request from '../../lib/request'
+import { MessageType } from '@adiwajshing/baileys'
+
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
@@ -38,6 +41,11 @@ export default class Command extends BaseCommand {
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
             return void M.reply(
+                await request.buffer('https://i.pinimg.com/564x/a4/79/3a/a4793a6813c4a38ef7a38288bda35f3d.jpg'),
+                MessageType.image,
+                undefined,
+                undefined,
+
                 `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
             )
         }
