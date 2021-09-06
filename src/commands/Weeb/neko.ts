@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        const rnekol = ['kemonomimi', 'neko', 'ngif', 'fox_girl']
+        const rnekol = ['kemonomimi', 'neko', 'fox_girl']
         const rnekolc = rnekol[Math.floor(Math.random() * rnekol.length)]
         const neko = await axios.get('https://nekos.life/api/v2/img/' + rnekolc)
 
