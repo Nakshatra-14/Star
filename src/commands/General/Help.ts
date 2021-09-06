@@ -1,9 +1,6 @@
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
-import request from '../../lib/request'
-import { MessageType } from '@adiwajshing/baileys'
-
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
@@ -13,7 +10,6 @@ export default class Command extends BaseCommand {
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            dm: true,
             aliases: ['h']
         })
     }
@@ -25,14 +21,15 @@ export default class Command extends BaseCommand {
             for (const command of commands) {
                 const info = this.handler.commands.get(command)
                 if (!command) continue
-                if (!info?.config?.category || info.config.category === 'dev') continue
+                // if (!info?.config?.category || info.config.category === 'dev') continue
+                if (!info?.config?.category) continue
                 if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
                 else {
                     categories[info.config.category] = []
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `👾 *Hiro's Command List* 👾\n\n`
+            let text = `👾 *Kaoi's Command List* 👾\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
@@ -41,11 +38,6 @@ export default class Command extends BaseCommand {
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
             return void M.reply(
-                await request.buffer('https://i.pinimg.com/originals/b2/90/89/b290899f20be2d555e193ee134fd74ca.jpg'),
-                MessageType.image,
-                undefined,
-                undefined,
-
                 `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
             )
         }
@@ -66,5 +58,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['🌀', '🎴', '🔮', '👑', '🎈', '⚙️', '🍀']
+    emojis = ['👨‍💻', '🌀', '🎴', '🔮', '👑', '🎈', '⚙️', '🍀']
 }
