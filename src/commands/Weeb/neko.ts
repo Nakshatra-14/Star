@@ -1,4 +1,5 @@
 import { MessageType } from '@adiwajshing/baileys'
+import jimp from '@oliver-moran/jimp'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import request from '../../lib/request'
