@@ -16,7 +16,7 @@ export default class Command extends BaseCommand {
             aliases: ['gif'],
             usage: `${client.config.prefix}gify [term]`,
             dm: true,
-            baseXp: 30
+            baseXp: 40
         })
     }
 
