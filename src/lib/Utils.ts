@@ -30,4 +30,10 @@ export default class {
         }
         return result
     }
+    GIFBufferToVideoBuffer: any
+    getBuffer: any
+    fetch: any
+    static fetch: any
+    static download: any
+    static capitalize: any
 }
