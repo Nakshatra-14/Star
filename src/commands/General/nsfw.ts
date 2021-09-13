@@ -11,10 +11,8 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'waifu',
-            description: 'sends you the waifu.',
-            aliases: ['waifu'],
-            category: 'fun',
-            usage: `${client.config.prefix}waifu`
+    
+        
         })
     }
 
