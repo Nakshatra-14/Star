@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['h']
+            aliases: ['menu']
         })
     }
 
