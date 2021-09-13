@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'kill',
             description: 'Killing is illegal, But not here.',
-            category: 'Reactions',
+            category: 'reactions',
             usage: `${client.config.prefix}kill [tag/quote users]`,
         })
     }
