@@ -34,7 +34,7 @@
 ## 🤝 Contributers
 
 <a href="https://github.com/PrajjwalDatir/Kaoi/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PrajjwalDatir/Kaoi" />
+  <img src="https://contrib.rocks/image?repo=Nakshatra4762/Star-bot" />
 </a>
 
 
