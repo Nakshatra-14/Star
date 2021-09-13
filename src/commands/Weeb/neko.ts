@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
                     MessageType.image,
                     undefined,
                     undefined,
-                    `More than one waifu, will ruin your laifu.\n`,
+                    `Here you go ✨\n`,
                     undefined
                 )
                 break
