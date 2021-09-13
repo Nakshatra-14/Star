@@ -1,6 +1,6 @@
 {
-    "name": "Kaoi",
-    "description": "Maintained Fork of Void",
+    "name": "Star",
+    "description": "Meet the Future",
     "keywords": [
       "bot",
       "whatsapp",
@@ -12,8 +12,8 @@
       "whatsapp-botto"
     ],
     "website": "https://github.com/PrajjwalDatir/Kaoi#readme",
-    "repository": "https://github.com/PrajjwalDatir/Kaoi.git",
-    "logo": "https://avatars.githubusercontent.com/u/46681482?v=4",
+    "repository": "https://github.com/Nakshatra4762/Star-2.0",
+    "logo": "https://avatars.githubusercontent.com/u/87998363?s=400&u=1df4dbaf4fdfc69cf64568de480bdc0da3217a23&v=4",
     "success_url": "/",
     "env": {
       "PREFIX": {
