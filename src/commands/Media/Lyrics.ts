@@ -16,7 +16,7 @@ export default class Command extends BaseCommand {
             category: 'media',
             aliases: ['ly'],
             usage: `${client.config.prefix}yts [term]`,
-            dm: true,
+            dm: false,
             baseXp: 20
         })
     }
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                 contextInfo: {
                     externalAdReply: {
                         title: `Search Term: ${term}`,
-                        body: `👾 Handcrafted for you by Kaoi 👾`,
+                        body: `✨Made for you✨`,
                         mediaType: 2,
                         thumbnailUrl: videos[0].thumbnail,
                         mediaUrl: videos[0].url
