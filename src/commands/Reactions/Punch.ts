@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
                         await this.client.fetch<{ url: string }>(
                             `https://yuabot.com/weeb/api/v1/img/punch`
                         )
-                    ).payload.url
+                    ).url
                 )
             ),
             MessageType.video,
