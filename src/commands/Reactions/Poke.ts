@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'poke',
             description: 'Poke someone',
-            category: 'reactions2',
+            category: 'reactions',
             usage: `${client.config.prefix}poke [tag/quote users]`,
         })
     }
