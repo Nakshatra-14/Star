@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
                     user.notify || user.vname || user.name || 'null'
                 }*\n🍀 *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)
         )
-        text += `\nTo deploy your own Bot or To support Star ✨\nVisit : The URL of this Repo will soon be given after the modification `
+        text += `\nTo deploy your own Bot or To support Star ✨\nVisit : https://github.com/Nakshatra4762/Star-2.0`
         return void M.reply(text)
     }
 }
