@@ -31,14 +31,13 @@
 + Feel free to open issues regarding any problems or if you have any feature requests
 + Make sure to follow the ESLint Rules while editing the code and run `npm run prettier-format` before opening PRs
 
+## 🎗Help
+Please give this repo a ✨ if it helped you.
+
+
 ## 🤝 Contributers
 
 <a href="https://github.com/PrajjwalDatir/Kaoi/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Nakshatra4762/Star-bot" />
 </a>
 
-
-### 🔵 Discord Server
-[![DISCORD](https://invidget.switchblade.xyz/Nzsb5weQFg)](https://discord.gg/Nzsb5weQFg)
-### 🟢 WhatsApp Group
-# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/I4m8zLPwTme9II9aZWRZJ1)
