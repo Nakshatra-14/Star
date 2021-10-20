@@ -23,7 +23,8 @@
 ## 💻 Deploy/Hosting Guide
 - Section Moved to [Kaoi-Guides](https://github.com/Hiroto77/Kaoi-Guides)
 ## 🍥 Features of the Repo
-- To view all features, click here➡️[Void_featuresList.md](https://github.com/PrajjwalDatir/Kaoi/blob/main/Features.md)
+- To view all features, click here➡️[Star_featuresList.md](https://github.com/Nakshatra4762/Star-2.0/blob/main/Features.md)
+
 
 
 ## 💪 Contribution
